@@ -138,7 +138,7 @@ void to442_grayscale(cv::Mat *rgbImage)
     {
         for (j = 0; j < imageWidth; j+=8)
         {
-			if (0 && j + 8 <= imageWidth)
+			if (j + 8 <= imageWidth)
 			{
 				uint8_t *pixel = rgbImage->ptr<uint8_t>(i, j); // Get a pointer to the pixel
 				
